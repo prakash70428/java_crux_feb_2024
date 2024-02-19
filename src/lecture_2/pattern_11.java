@@ -11,6 +11,7 @@ public class pattern_11 {
 	        int space = n - 1;
 	        int star = 1;
 	        
+	        
 	        while(row <= n) {
 	        	//spaces
 	        	int i = 1;
@@ -24,13 +25,13 @@ public class pattern_11 {
 	        	int val = 1;
 	        	while(j <= star) {
 	        		System.out.print(val + " ");
-	        		j = j + 1;
 	        		if(j < star/2 + 1) {
 	        			val++;
 	        		}else {
-	        			val--;
+	        			 val--;
 	        		}
 	        		
+	        		j = j + 1;
 	        	}
 	        	
 	        	//next row prepration
