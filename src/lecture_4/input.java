@@ -1,20 +1,20 @@
 package lecture_4;
 import java.util.*;
-public class span_of_array {
+public class input {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner scn = new Scanner(System.in);
+        Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
         int[] arr = new int[n];
-        for(int i=0 ; i < n;i++) {
+        for(int i=0;i < n;i++) {
         	arr[i] = scn.nextInt();
         }
-       
+        
         int max = arr[0];
         int min = arr[0];
         
-        for(int i=1;i < arr.length;i++) {
+        for(int i=1 ;i < n;i++) {
         	if(arr[i] > max) {
         		max = arr[i];
         	}
@@ -25,7 +25,7 @@ public class span_of_array {
         }
         
         int span = max - min;
-        System.out.println("span: " + span);
+        System.out.println("span: "+ span);
 	}
 
 }

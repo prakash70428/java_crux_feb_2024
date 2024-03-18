@@ -11,13 +11,7 @@ public class user_input {
         	arr[i] = scn.nextInt();
         }
         
-        display(arr);
+       
 	}
 	
-	public static void display(int[] arr) {
-        for(int i=0 ; i < arr.length;i++) {
-        	System.out.println(arr[i]);
-        }
-	}
-
 }
