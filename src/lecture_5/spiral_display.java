@@ -23,25 +23,25 @@ public class spiral_display {
 		
 		while(counter < n*m) {
 			//left boundary
-			for(int row=rmin;row <= rmax && counter < n*m;row++) {
+			for(int row=rmin;row <= rmax&&counter < n*m;row++) {
 				System.out.println(arr[row][cmin]);
 				counter++;
 			}
 			cmin++;
 			//bottom boundary
-			for(int col=cmin;col <= cmax && counter < n*m;col++) {
+			for(int col=cmin;col <= cmax&&counter < n*m;col++) {
 				System.out.println(arr[rmax][col]);
 				counter++;
 			}
 			rmax--;
 			//right boundary
-			for(int row=rmax ;row >= rmin && counter < n*m;row--) {
+			for(int row=rmax ;row >= rmin&&counter < n*m;row--) {
 				System.out.println(arr[row][cmax]);
 				counter++;
 			}
 			cmax--;
 			//top boundary
-			for(int col=cmax;col >= cmin && counter < n*m;col--) {
+			for(int col=cmax;col >= cmin&&counter < n*m;col--) {
 				System.out.println(arr[rmin][col]);
 				counter++;
 			}
