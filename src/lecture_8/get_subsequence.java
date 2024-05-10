@@ -30,5 +30,6 @@ public class get_subsequence {
 		
 		return mr;
 	}
+	
 
 }
