@@ -6,11 +6,9 @@ public class mazePaths {
 		// TODO Auto-generated method stub
 		 Scanner scn = new Scanner(System.in);
 	     int n = scn.nextInt();
-	     int m = scn.nextInt();
-	     
+	     int m = scn.nextInt();    
 	     System.out.println(getMazePaths(0,0,n-1,m-1));
 	}
-	
 	public static ArrayList<String> getMazePaths(int sr,int sc,int dr,int dc){
 		if(sr > dr || sc > dc) {
 			ArrayList<String> bans = new ArrayList<>();
